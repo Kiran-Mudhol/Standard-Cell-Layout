@@ -2,25 +2,37 @@
 ### This Repositery Presents the Standard Cell(INVERTER NAND NOR and XOR) Design and Layout
 1.[INVERTER](#INVERTER)
 
-  [Schimatic](#Schimatic)
+   a.[Schimatic](#Schimatic)
   
-  [Layout](#Layout)
+   b.[Layout](#Layout)
   
-  [Half DRC](#Half-DRC)
+   c.[Half DRC](#Half-DRC)
 
-2.[Reference Circuit Diagram](#Reference-Circuit-Diagram)
+2.[NAND](#NAND)
 
-3.[Reference Waveform](#Reference-Waveform)
+   a.[Schimatic](#Schimatic)
+  
+   b.[Layout](#Layout)
+  
+   c.[Half DRC](#Half-DRC)
 
-3.[Circuit Details](#Circuit-Details)
+3.[NOR](#NOR)
 
-4.[Softwares Used](#Softwares-Used)
+   a.[Schimatic](#Schimatic)
+  
+   b.[Layout](#Layout)
+  
+   c.[Half DRC](#Half-DRC)
 
-5.[Circuit Design in eSim](#Circuit-Design-in-eSim)
+4.[XOR](#XOR)
 
-6.[Waveform in ngspice](#Waveform-in-ngspice)
+   a.[Schimatic](#Schimatic)
+  
+   b.[Layout](#Layout)
+  
+   c.[Half DRC](#Half-DRC)
 
-7.[References](#References)
+
 
 8.[Acknowledgements](#Acknowledgements)
 
@@ -29,63 +41,58 @@
 ## INVERTER
 ### Schimatic
 
+![Inverter_sch](https://user-images.githubusercontent.com/59924751/150633681-9c6b0e65-2f49-4637-9277-911a859b245f.png)
  
-## Reference Circuit Diagram
+### Layout
 
-![Ref_Final_cir](https://user-images.githubusercontent.com/59924751/153573441-7d413445-e20a-4c2d-b1a7-d4d2a5f42a8d.JPG)
+![LVS_INVERTER](https://user-images.githubusercontent.com/59924751/150634368-ba4001aa-cebe-4c5f-a887-ad0d76a610fc.png)
 
-## Reference Waveform
+### Half DRC
 
-![Final_ref_wave](https://user-images.githubusercontent.com/59924751/153573454-8dc5afd6-8a16-4447-b972-98b9a00e0482.JPG)
+![HDRC_INVERTER](https://user-images.githubusercontent.com/59924751/150634390-5976ca6d-9141-4303-91dd-83a846e4988d.png)
 
-## Circuit Details
-Ring Oscillator consists of odd number of Inverters connected in Series to form a closed loop with positive feedback. These ring oscillators does not require an input other than Vdd and Vss Supply Here the number of Stages taken are 9. Frequency of Oscillation of Ring Oscillator is given by Fosc = t/(N(tphl + tplh))Where N is (odd) number of inverters tplh is a Low to High Delay tphl is a High to Low Delay of an Inverter if the Number of Stages chosen is high it reduces the power dissipation by the inverter which can be analysed by below equation.I = Q/T If the N increases, FOsc Reduces, which intern Increase the T and reduces the Iavg. From P = I.V if I reduces P also Reduces which indicates the Reduction in the power Dissipated by the Inverters.as per the Table 1 from the Reference [2] analysis of Various parameters like Frequency and Power Consumption is done for different values of Wp, Wn, and L. Transient response for Wp = 370.55 Wn = 220.55 and L =172.51 (in nm) is as shown in the Reference Wave form Taken from Reference [2].
+## NAND
+### Schimatic
 
-## Softwares Used
-### eSim
-It is an Open Source EDA developed by FOSSEE, IIT Bombay
-For more Details visit :
-https://esim.fossee.in/home
-
-### NgSpice
-It is an Open Source Software for Spice Simulations. For more details Visit:
-http://ngspice.sourceforge.net/docs.html
-
-### Sky130 Process Development Kit
-The Skywater 130nm technology is developed by Google for 130nm node. The PDK is open source and current under development.
-For more details Visit : 
-https://skywater-pdk.readthedocs.io/en/main/#
-## Circuit Design in eSim
-VCO (9 - Stage Ring Oscillator) is designed using eSim and the screenshot of schematic file is shown below
-
-![IMP_sch](https://user-images.githubusercontent.com/59924751/152653744-3c717d41-618b-4a9a-927a-f9df6882094c.JPG)
-
-## Waveform in ngspice
-After creating the schematics, spice netlist was extracted with the help of esim and the necessary model files of sky130 tt transistors were included in the netlist and transient analysis was performed.
-The result of transient analysis of VCO @ Vdd = 1.5 V is shown below
-
-![final](https://user-images.githubusercontent.com/59924751/152654328-8f4cc87a-1f74-4f98-af74-50ee4e031fbd.JPG)
-
-### Frequency Calculation
-
-![freq_cal_3](https://user-images.githubusercontent.com/59924751/153576947-9432d398-c73d-442a-85e7-57f6b92db82c.JPG)
-
-Here dx Represents TimePeriod (T) of the wave as shown in the above waveform  <br /> 
-So (Frequenyc is Reciprocal of Timeperiod) Frequecny of Oscillation Fosc = 1/T  <br /> 
- Frequecny is 1 / (0.47138 * 10^-9)  <br /> 
- Hence Fosc = 2.12 GHZ  <br /> 
+![SCH_NAND](https://user-images.githubusercontent.com/59924751/150634470-a57f24bc-3946-4773-88e7-4334bb2be11a.png)
  
- ## References
-[1] CMOS Circuit design, Layout and Simulation 3rd edition By R. JACOB BAKER
+### Layout
 
-[2] Design of a Nine Stage Ring Oscillator Using PSO By 
-Preeti Kumari, Madhuresh Suman
+![LVS_NAND](https://user-images.githubusercontent.com/59924751/150634479-269343c7-33ac-4419-a5d6-1324387348e7.png)
 
-[3] Design and analysis of CMOS ring oscillator using 45 nm technology By Vandna Sikarwar, Neha Yadav, Shyam Akashe
+### Half DRC
+
+![HDRC_NAND](https://user-images.githubusercontent.com/59924751/150634485-90d8c79c-1079-435c-9544-6eb95049085d.png)
+
+## NOR
+### Schimatic
+
+![SCH_NOR](https://user-images.githubusercontent.com/59924751/150634521-733fe395-bf38-4818-b58c-92929d1c6a49.png)
+ 
+### Layout
+
+![LVS_NOR](https://user-images.githubusercontent.com/59924751/150634527-daec3964-c749-476b-bac6-f4adce86f986.png)
+
+### Half DRC
+
+![HDRC_NOR](https://user-images.githubusercontent.com/59924751/150634534-1a143ba0-618f-4b60-8ebf-16ec3ea98c8f.png)
+
+## XOR
+### Schimatic
+
+![SCH_XOR](https://user-images.githubusercontent.com/59924751/150634572-412f474b-53df-4781-8af9-1fb090957226.png)
+ 
+### Layout
+
+![LVS_XOR](https://user-images.githubusercontent.com/59924751/150634581-1b99c94a-1c2b-4615-9065-238cf9f90663.png)
+
+### Half DRC
+
+![HDRC_XOR](https://user-images.githubusercontent.com/59924751/150634586-8807f9e1-4abd-49de-bd94-50a3af21b2f4.png)
 
 ## Acknowledgements
-1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. -
-2. SFAL team
+1. KLE Technological University
+2. eklakshya 
 
 ## Author
  Kiran K. Mudhol <br /> 
