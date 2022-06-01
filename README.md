@@ -10,7 +10,7 @@
 
 2.[NAND](#NAND)
 
-    * [Schimatic](#Schimatic)
+   * [Schimatic](#Schimatic)
    
    * [Layout](#Layout)
   
