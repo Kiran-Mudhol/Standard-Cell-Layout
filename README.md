@@ -1,4 +1,4 @@
-# StandardCell-Layout
+# Standard Cell Layout
 ### This Repositery Presents the Standard Cell Design and Layout of INVERTER, NAND, NOR, XOR
 1.[INVERTER](#INVERTER)
 
