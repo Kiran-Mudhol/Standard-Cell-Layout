@@ -3,33 +3,33 @@
 1.[INVERTER](#INVERTER)
 
    * [Schimatic](#Schimatic)
+   
    * [Layout](#Layout)
   
    * [Half DRC](#Half-DRC)
 
 2.[NAND](#NAND)
 
-   a.[Schimatic](#Schimatic)
+    * [Schimatic](#Schimatic)
+   
+   * [Layout](#Layout)
   
-   b.[Layout](#Layout)
-  
-   c.[Half DRC](#Half-DRC)
+   * [Half DRC](#Half-DRC)
 
 3.[NOR](#NOR)
 
-   a.[Schimatic](#Schimatic)
+   * [Schimatic](#Schimatic)
+   
+   * [Layout](#Layout)
   
-   b.[Layout](#Layout)
-  
-   c.[Half DRC](#Half-DRC)
-
+   * [Half DRC](#Half-DRC)
 4.[XOR](#XOR)
 
-   a.[Schimatic](#Schimatic)
+   * [Schimatic](#Schimatic)
+   
+   * [Layout](#Layout)
   
-   b.[Layout](#Layout)
-  
-   c.[Half DRC](#Half-DRC)
+   * [Half DRC](#Half-DRC)
 
 
 
@@ -94,8 +94,8 @@
 ![HDRC_XOR](https://user-images.githubusercontent.com/59924751/150634586-8807f9e1-4abd-49de-bd94-50a3af21b2f4.png)
 
 ## Acknowledgements
-1. KLE Technological University
-2. eklakshya Innovation Labs
+* KLE Technological University
+* eklakshya Innovation Labs Hubballi
 
 ## Author
  Kiran K. Mudhol <br /> 
