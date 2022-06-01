@@ -2,11 +2,10 @@
 ### This Repositery Presents the Standard Cell Design and Layout of INVERTER, NAND, NOR, XOR
 1.[INVERTER](#INVERTER)
 
-   a.[Schimatic](#Schimatic)
+   * [Schimatic](#Schimatic)
+   * [Layout](#Layout)
   
-   b.[Layout](#Layout)
-  
-   c.[Half DRC](#Half-DRC)
+   * [Half DRC](#Half-DRC)
 
 2.[NAND](#NAND)
 
