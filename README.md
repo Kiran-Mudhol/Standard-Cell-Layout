@@ -34,9 +34,9 @@
 
 
 
-8.[Acknowledgements](#Acknowledgements)
+5.[Acknowledgements](#Acknowledgements)
 
-9.[Author](#Author)
+6.[Author](#Author)
 
 ## INVERTER
 
