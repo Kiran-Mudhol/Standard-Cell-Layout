@@ -1,5 +1,5 @@
 # StandardCell-Layout
-### This Repositery Presents the Standard Cell(INVERTER NAND NOR and XOR) Design and Layout
+### This Repositery Presents the Standard Cell Design and Layout of INVERTER, NAND, NOR, XOR
 1.[INVERTER](#INVERTER)
 
    a.[Schimatic](#Schimatic)
