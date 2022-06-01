@@ -96,7 +96,7 @@
 
 ## Acknowledgements
 1. KLE Technological University
-2. eklakshya 
+2. eklakshya Innovation Labs
 
 ## Author
  Kiran K. Mudhol <br /> 
